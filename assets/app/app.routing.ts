@@ -1,11 +1,13 @@
+import { ChatInputComponent } from './chat/chat-input.component';
 import { Routes, RouterModule } from "@angular/router";
 
 import { MessagesComponent } from "./messages/messages.component";
 import { AuthenticationComponent } from "./auth/authentication.component";
 
 const APP_ROUTES: Routes = [
-    { path: '', redirectTo: '/messages', pathMatch: 'full' },
+    { path: '', redirectTo: '/chatbot', pathMatch: 'full' },
     { path: 'messages', component: MessagesComponent },
+    { path: 'chatbot', component: ChatInputComponent },
     { path: 'auth', component: AuthenticationComponent, loadChildren: './auth/auth.module#AuthModule' }
 ];
 

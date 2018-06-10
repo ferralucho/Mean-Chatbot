@@ -10,19 +10,23 @@ import { AuthService } from "./auth/auth.service";
 import { ErrorComponent } from "./errors/error.component";
 import { ErrorService } from "./errors/error.service";
 import { MessageModule } from "./messages/message.module";
+import { ChatInputComponent } from './chat/chat-input.component';
+import { ChatModule } from './chat/chat.module';
 
 @NgModule({
     declarations: [
         AppComponent,
         AuthenticationComponent,
         HeaderComponent,
-        ErrorComponent
+        ErrorComponent,
+        ChatInputComponent
     ],
     imports: [
         BrowserModule,
         routing,
         HttpModule,
-        MessageModule
+        MessageModule,
+        ChatModule
     ],
     providers: [AuthService, ErrorService],
     bootstrap: [AppComponent]
