@@ -12,7 +12,7 @@ var userRoutes = require('./routes/user');
 var chatRoutes = require('./routes/chat');
 
 var app = express();
-mongoose.connect('mongodb://test-user:123456@ds137740.mlab.com:37740/messages-mean');
+mongoose.connect('mongodb://');
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
