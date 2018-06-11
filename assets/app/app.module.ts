@@ -12,6 +12,8 @@ import { ErrorService } from "./errors/error.service";
 import { MessageModule } from "./messages/message.module";
 import { ChatInputComponent } from './chat/chat-input.component';
 import { ChatModule } from './chat/chat.module';
+import { CryptoDashboardModule } from './crypto-dashboard/crypto-dashboard.module';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
     declarations: [
@@ -24,9 +26,10 @@ import { ChatModule } from './chat/chat.module';
     imports: [
         BrowserModule,
         routing,
-        HttpModule,
+        HttpClientModule,
         MessageModule,
-        ChatModule
+        ChatModule,
+        CryptoDashboardModule
     ],
     providers: [AuthService, ErrorService],
     bootstrap: [AppComponent]

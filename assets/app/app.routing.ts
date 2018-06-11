@@ -1,3 +1,4 @@
+import { DashboardGeneralComponent } from './crypto-dashboard/dashboard-general.component';
 import { ChatInputComponent } from './chat/chat-input.component';
 import { Routes, RouterModule } from "@angular/router";
 
@@ -8,6 +9,7 @@ const APP_ROUTES: Routes = [
     { path: '', redirectTo: '/chatbot', pathMatch: 'full' },
     { path: 'messages', component: MessagesComponent },
     { path: 'chatbot', component: ChatInputComponent },
+    { path: 'cryptodashboard', component: DashboardGeneralComponent },
     { path: 'auth', component: AuthenticationComponent, loadChildren: './auth/auth.module#AuthModule' }
 ];
 
